@@ -1,0 +1,13 @@
+.list-box {
+    width: 350px;
+    height: 40px;
+    border: 1px solid grey;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.list-box:hover {
+    cursor: pointer;
+}
