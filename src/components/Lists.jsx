@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
-// import { getCards } from '../api';
+import { useContext } from 'react';
 import Context from './Context';
 import '../style/Lists.css';
 import { List } from './List';

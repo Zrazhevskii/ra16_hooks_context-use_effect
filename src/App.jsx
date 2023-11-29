@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import './App.css';
 import { Details } from './components/Details';
 import { Lists } from './components/Lists';
@@ -19,9 +19,10 @@ function App() {
         return (id) => {
             getItemCard(id).then((data) => {
                 setCard(data);
+                console.log(data)
             });
         };
-    }, [card]);
+    }, []);
 
     const value = {
         cards,
