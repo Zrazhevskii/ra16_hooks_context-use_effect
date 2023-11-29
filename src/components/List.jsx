@@ -1,13 +1,22 @@
-import React from 'react'
-import '../style/List.css'
+import React, { useContext } from 'react';
+import '../style/List.css';
+import Context from './Context';
 
-export const List = ( { elem } ) => {
-    // console.log(elem)
+export const List = ({ elem }) => {
+    const value = useContext(Context);
+
+    const hendlerClick = (id) => {
+        value.addCard(id);
+    };
+
     const { id, name } = elem;
-    // console.log(name)
-  return (
-    <div className='list-box'>
-        {name}
-    </div>
-  )
-}
+    return (
+        <button
+            type='button'
+            className='list-box'
+            onClick={(elem) => hendlerClick(id)}
+        >
+            {name}
+        </button>
+    );
+};

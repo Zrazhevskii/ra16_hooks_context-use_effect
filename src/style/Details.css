@@ -1,0 +1,15 @@
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    min-height: 200px;
+    background-color: rgb(220, 240, 233);
+    margin: auto;
+    border-radius: 5px;
+}
+
+.title {
+    display: block;
+    border: 1px solid grey;
+    height: 40px;
+}
